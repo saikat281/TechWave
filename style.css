@@ -5,6 +5,22 @@
     padding: 0px;
 }
 
+
+/* shared */
+ .btn{
+    display: flex;
+    align-items: center;
+    gap:4px;
+    border-radius: 1.25rem;
+    padding: 0.75rem 1rem ;
+    background: linear-gradient(#9100F8,#FB09B4,#F7E93F);
+    color: white;
+    font-weight:500;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+ }
+
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -17,44 +33,119 @@ header {
     background-color: #1A0B2E;
 }
 
-nav{
+ nav{
     width: 1200px;
-    margin: 0px auto;
+    margin:0px auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     border: 1px solid red;
-}
-nav .logo h1{
-    font-size: 32px;
-    color: white;
-}
-nav .logo .lin{
-    color: #F7E93F ,#FB09B4,#9100F8;
-}
-
-nav .menu ul{
-    display: flex;
-    gap:32px;
     align-items: center;
+ }
+ nav .menu ul{
+    display: flex;
+    gap: 32px;
     list-style-type: none;
-}
-nav .menu ul li a{
+ }
+ nav .menu ul a{
     text-decoration: none;
+    color: white;
     font-size: 16px;
     font-weight: normal;
-    color: white;
     cursor: pointer;
-}
+ }
+ nav .logo img{
+    width: 13.6875rem;
+    height: 2rem;
+ }
 
-nav .btn-1{
+ #hero{
+    background: url("assets/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 6.3125rem;
+
+ }
+ #hero .hero-container{
+    width: 1200px;
+    margin: 0px auto;
+    border: 1px solid yellow;
+ }
+
+ #hero .hero-container .pic{
+    border: 1px solid green;
+    position:relative;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 4px;
+ }
+#hero .hero-container .pic .h-bg{
+      
+}
+#hero .hero-container .pic .mic{
+    position: absolute;
+}
+#hero .hero-container .info{
+    text-align: center;
+}
+#hero .hero-container .info h1{
+    font-size: 3.75rem;
     color: white;
-    font-weight: 500;
-    padding: 12px 16px;
-    border-radius: 20px;
-    background: linear-gradient(#9100F8,#FB09B4,#F7E93F);
+    margin-bottom: 0.75rem;
+}
+#hero .hero-container .info p{
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+}
+#hero .hero-container .info .hero-btn{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    gap:0.5rem;
+}
+#hero .hero-container .info .hero-btn #hero-btn2{
+    background: transparent;
+    border: 2px solid #00FF88;
+    color: #00FF88;
+    padding: 0.75rem,1.25rem;
 }
 
+
+/* #hero{
+
+    background: url("assets/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 101px;
+
+} */
+/* #hero .hero-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+} */
+/* #hero .hero-container .pic .h-bg img{
+    width: 21.875rem;
+    height: 21.875rem;
+} */
+
+/* #hero .hero-container .pic{
+    margin-bottom: 150px;
+} */
+
+/* #hero .hero-container .pic .mic{
+    width: 12rem;
+    height: 12rem;
+    margin-top: -18.125rem;
+    margin-left: 6.875rem;
+} */
+/* #hero .hero-container .mic img{
+    width: 8rem;
+    height: 12.5rem;
+} */

@@ -138,39 +138,28 @@ header {
 }
 
 
-/* #hero{
-
-    background: url("assets/hero-bg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+#review-section{
+    padding-top: 5rem;
+    background-color: #1A0B2E;
+    color:white;
+}
+#review-section .review-container{
+    width: 1200px;
+    margin: 0px auto;
     display: flex;
-    justify-content: center;
-    padding-top: 101px;
+    justify-content: space-between;
+}
+#review-section .review-container .info{
+    text-align: center;
+}
 
-} */
-/* #hero .hero-container{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    
-} */
-/* #hero .hero-container .pic .h-bg img{
-    width: 21.875rem;
-    height: 21.875rem;
-} */
-
-/* #hero .hero-container .pic{
-    margin-bottom: 150px;
-} */
-
-/* #hero .hero-container .pic .mic{
-    width: 12rem;
-    height: 12rem;
-    margin-top: -18.125rem;
-    margin-left: 6.875rem;
-} */
-/* #hero .hero-container .mic img{
-    width: 8rem;
-    height: 12.5rem;
-} */
+#review-section .review-container .info h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #00FF88;
+    margin-bottom: 1rem;
+}
+#review-section .review-container .info p{
+    font-size: 1rem;
+    font-weight: 200;
+}

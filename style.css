@@ -38,7 +38,7 @@ header {
     margin:0px auto;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     align-items: center;
     margin-bottom: 1.5rem;
  }
@@ -73,11 +73,11 @@ header {
  #hero .hero-container{
     width: 1200px;
     margin: 0px auto;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
  }
 
  #hero .hero-container .pic{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     position:relative;
     display: flex;
     justify-content: center;
@@ -102,7 +102,7 @@ header {
     font-weight: 200;
 }
 #hero .hero-container .info .hero-btn{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     gap:0.5rem;
@@ -117,14 +117,14 @@ header {
 #about-section{
     background-color: #1A0B2E;
     padding-top: 6.3125rem;
-    border: 1px solid blanchedalmond;
+    /* border: 1px solid blanchedalmond; */
 }
 #about-section .about-container{
     width: 1200px;
     margin: 0px auto;
     text-align: center;
     color: white;
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
 }
 #about-section .about-container h1{
     font-size: 3rem;
@@ -259,6 +259,51 @@ header {
     "Premium Global Global"
     "Exclusive Exclusive Rich"
 }
-#aboutTechWave-section .aboutTechWave-container .i1{
-    
+
+
+
+
+
+
+#features-section{
+    background-color: #1A0B2E;
+    padding-top: 7.5rem;
+    color: white;
+}
+#features-section h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 2.5rem; 
+}
+#features-section .features-container{
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    gap: 1.875rem;
+}
+#features-section .features-container .feature-card{
+    background-color: #250D44;
+    width: 23.75rem;
+    height: 27.5rem;
+}
+#features-section .features-container .feature-card .info{
+    padding:1.5rem;
+}
+#features-section .features-container .feature-card .info h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+#features-section .features-container .feature-card .info p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 0.75rem;
+}
+#features-section .features-container .feature-card .info .time{
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
 }

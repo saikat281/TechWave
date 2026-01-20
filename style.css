@@ -20,7 +20,12 @@
     cursor: pointer;
     border: none;
 }
-
+.btn:hover{
+    opacity: 70%;
+}
+.hamburger{
+    display: none;
+}
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -34,13 +39,15 @@ header {
 }
 
 nav {
-    width: 1200px;
+    width: 71%;
+    max-width: 1200px;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
     /* border: 1px solid red; */
     align-items: center;
     margin-bottom: 1.5rem;
+    
 }
 
 nav .menu ul {
@@ -55,6 +62,9 @@ nav .menu ul a {
     font-size: 1rem;
     font-weight: normal;
     cursor: pointer;
+}
+nav .menu ul a:hover{
+    color: rgb(90, 89, 89);
 }
 
 nav .logo img {
@@ -76,7 +86,8 @@ hr {
 }
 
 #hero .hero-container {
-    width: 1200px;
+    width: 71%;
+    max-width: 1200px;
     margin: 0px auto;
     /* border: 1px solid yellow; */
 }
@@ -92,6 +103,23 @@ hr {
 #hero .hero-container .pic .mic {
     position: absolute;
 }
+#hero .hero-container .pic .new{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 340px;
+}
+#hero .hero-container .pic .new img{
+    width: 120px;
+    height: 80px;
+    transition: 1s;
+}
+#hero .hero-container .pic .new img:hover{
+    width: 160px;
+    height: 120px;
+    transition: 1s;
+}
+
+
 
 #hero .hero-container .info {
     text-align: center;
@@ -131,7 +159,8 @@ hr {
 }
 
 #about-section .about-container {
-    width: 1200px;
+    width: 71%;
+    max-width: 1200px;
     margin: 0px auto;
     text-align: center;
     color: white;
@@ -159,10 +188,11 @@ hr {
 }
 
 #review-section .review-container {
-    width: 1200px;
+    width: 71%;
+    max-width: 1200px;
     margin: 0px auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
 #review-section .review-container .info {
@@ -188,7 +218,8 @@ hr {
 }
 
 #aboutTechWave-section .aboutTechWave-container {
-    width: 1200px;
+    width: 71%;
+    max-width: 1200px;
     margin: 0px auto;
 }
 
@@ -199,8 +230,7 @@ hr {
 }
 
 #aboutTechWave-section h1 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2.5rem;
@@ -291,10 +321,6 @@ hr {
 }
 
 
-
-
-
-
 #features-section {
     background-color: #1A0B2E;
     padding-top: 7.5rem;
@@ -309,9 +335,12 @@ hr {
 }
 
 #features-section .features-container {
-    width: 1200px;
+    box-sizing: border-box;
+    width: 71%;
+    max-width: 1200px;
     margin: 0px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
     gap: 1.875rem;
 }
@@ -365,12 +394,13 @@ hr {
 
 #host-section .host-container {
     box-sizing: border-box;
-    width: 1200px;
+    width: 71%;
+    max-width: 1200px;
     margin: 0px auto;
     /* border: 1px solid red; */
     background-color: #250D44;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 20% 80%;
     align-items: center;
     padding: 2.5rem;
     gap: 1.5rem;
@@ -408,7 +438,7 @@ hr {
 }
 
 footer {
-    
+
     background: url("assets/footer-bg.png");
     background-size: cover;
     background-position: center;
@@ -418,34 +448,170 @@ footer {
 
 }
 
-footer .footer-container{
+footer .footer-container {
     box-sizing: border-box;
     /* border: 1px solid red; */
-    width: 1200px;
+    width: 71%;
+    max-width: 1200px;
     margin: 0px auto;
     text-align: center;
     padding: 7.5rem;
 }
 
-footer .footer-container .logo{
+footer .footer-container .logo-div{
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-container .logo {
     width: 25.625rem;
     height: 3.75rem;
     margin-bottom: 2rem;
 }
 
-footer .footer-container .social{
-    display: flex;
-    justify-content: center;
+footer .footer-container .social {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: 2.5rem;
 }
-footer .footer-container .social .item{
+
+footer .footer-container .social .item {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
     margin-bottom: 2rem;
 }
-footer .footer-container .social .item{
+
+footer .footer-container .social .item {
     font-weight: 200;
     opacity: 80%
 }
 
+.hide {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
+
+@media screen and (max-width:576px) {
+
+nav {
+    width: 95%;
+    
+}
+nav .menu{
+    display: none;
+}
+nav .btn{
+    display: none;
+}
+nav .logo img {
+    width: 8.5625rem;
+    height: 1.25rem;
+}
+.hamburger{
+    display: block;
+}
+
+
+
+
+#review-section {
+    padding-top: 3rem;
+    background-color: #1A0B2E;
+    color: white;
+    padding-bottom: 4rem;
+}
+#review-section .review-container {
+    grid-template-columns: repeat(1,1fr);
+}    
+    #aboutTechWave-section {
+    padding-top: 4.5rem;
+}
+#aboutTechWave-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+#aboutTechWave-section .aboutTechWave-container {
+    width: 95%;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "Premium"
+        "Mobile"
+        "Global"
+        "Exclusive"
+        "Rich"
+}
+
+#features-section {
+    padding-top: 4.5rem;
+}
+#features-section h1 {
+    font-size: 2rem;
+}
+#features-section .features-container {
+    grid-template-columns: repeat(1,1fr);
+}
+
+#host-section .host-container {
+
+    grid-template-columns: repeat(1,1fr);
+}
+#host-section .host-container .info h2{
+    text-align: center;
+}
+#host-section .host-container .info p{
+    text-align: center;
+}
+#host-section .host-container .info .social-img{
+    text-align: center;
+}
+
+footer .footer-container {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    width: 95%;
+    max-width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 7.5rem;
+}
+footer .footer-container .logo {
+    width: 13.6875rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer .footer-container .social {
+    flex-direction: column;
+}
+
+
+footer .footer-container .social {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2.5rem;
+}
+
+    
+}
